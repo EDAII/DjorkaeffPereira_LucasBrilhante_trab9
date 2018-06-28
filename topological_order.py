@@ -47,14 +47,14 @@ def top_sort(grafo):
     if(i!=n):
         print ("O grafo não é Acíclico!")
     else:
+        print("Melhor ordenação topográfica: ")
         print (topSort)        
 
-
-
-
-
-
 if __name__ == '__main__':
+
+    # n=8 # número de nós
+
+    # grafo=[set() for i in range(n)]
 
     """
     n=6 # número de nós
@@ -74,7 +74,6 @@ if __name__ == '__main__':
     grafo[5].add(4)
     """
 
-    """
     n=7 #number of nodes
 
     grafo=[set() for i in range(n)]
@@ -91,7 +90,6 @@ if __name__ == '__main__':
     grafo[4].add(5)
     grafo[4].add(6)
     grafo[5].add(6)
-    """
 
     plot_graph(grafo)
 
