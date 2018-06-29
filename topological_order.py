@@ -52,10 +52,22 @@ def top_sort(grafo):
 
 if __name__ == '__main__':
 
-    # n=8 # número de nós
+    """
+    n=8 # número de nós
 
-    # grafo=[set() for i in range(n)]
+    grafo=[set() for i in range(n)]
 
+    grafo[0].add(1) # 7 -> 11
+    grafo[0].add(2) # 7 -> 8
+    grafo[1].add(7) # 11 -> 2
+    grafo[1].add(5) # 11 -> 9
+    grafo[1].add(6) # 11 -> 10
+    grafo[2].add(5) # 8 -> 9
+    grafo[3].add(1) # 5 -> 11
+    grafo[4].add(2) # 3 -> 8
+    grafo[4].add(6) # 3 -> 10
+    """
+    
     """
     n=6 # número de nós
 
@@ -74,6 +86,7 @@ if __name__ == '__main__':
     grafo[5].add(4)
     """
 
+    """
     n=7 #number of nodes
 
     grafo=[set() for i in range(n)]
@@ -90,6 +103,7 @@ if __name__ == '__main__':
     grafo[4].add(5)
     grafo[4].add(6)
     grafo[5].add(6)
+    """
 
     plot_graph(grafo)
 
